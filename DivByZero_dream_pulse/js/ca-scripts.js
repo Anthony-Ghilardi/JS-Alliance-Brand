@@ -1,24 +1,33 @@
 var customerName = "Alliance  ";
 
-// <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
+
 function addCustomerName() {
 
     let title = document.getElementById('title')
     title.textContent = customerName;
-    
-    // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
-
-    // <h2 id="introheader" class="tm-section-title mb-5 text-uppercase tm-color-primary"></h2> <!--todo: Add Customer Name-->
+    const h1Element = document.getElementById('tm-header');
+    h1Element.textContent = 'John Doe'
+    // const h1Element changes the customer name to John Doe affecting the h1 tag
+    const h2Element = document.getElementById('introheader');
+    h2Element.textContent = 'John Doe'
+    // Const h2Element changes the cusomter name to John Doe affecting the h2 tag
 
 };
 
 function toggleColors() {
-    // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
+    const newColors = document.querySelectorAll('.tm-white-rect');
+        newColors.forEach(newColor => {
+            newColor.classList.remove('tm-white-rect');
+            newColor.classList.add('tm-blue-rect');
+        })
+    // This const and .forEach changes tm-white-rect to tm-blue-rect for all corresponding tags
 
 };
 
 function hideElement() {
-    //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
+    const hideList = document.querySelector('.nav.flex-row.tm-social-links')
+        hideList.style.display = 'none';
+    // This const hides the ul containing social media links and icons
 
 };
 
