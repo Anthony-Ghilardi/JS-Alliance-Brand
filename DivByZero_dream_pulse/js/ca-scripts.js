@@ -5,12 +5,15 @@ function addCustomerName() {
 
     let title = document.getElementById('title')
     title.textContent = customerName;
+
     const h1Element = document.getElementById('tm-header');
-    h1Element.textContent = 'John Doe'
+    h1Element.textContent = customerName
+
     // const h1Element changes the customer name to John Doe affecting the h1 tag
+
     const h2Element = document.getElementById('introheader');
-    h2Element.textContent = 'John Doe'
-    // Const h2Element changes the cusomter name to John Doe affecting the h2 tag
+    h2Element.textContent = customerName
+    // Const h2Element changes the cusomter name to Alliance affecting the h2 tag
 
 };
 
@@ -25,23 +28,32 @@ function toggleColors() {
 };
 
 function hideElement() {
-    const hideList = document.querySelector('.nav.flex-row.tm-social-links')
+    const hideList = document.querySelector('.tm-social-links');
         hideList.style.display = 'none';
     // This const hides the ul containing social media links and icons
 
 };
 
  function addText() {
+    const introText = document.getElementById('intropara1');
+        introText.textContent = 'Alliance was founded in 1931 by Albert Daniels.'
+    // This const above adds paragraph text about the company founding year etc.
 
-    //<p id="intropara1" class="tm-color-gray">  <!--todo: Add customer company introduction text about their founding year-->
+    const leadText = document.getElementById('intropara2');
+        leadText.textContent = 'The company is a leader in P.C. Manufacturing'
+    // This const above add paragraph text about the companies leading product
 
-    //<p id="intropara2" class="mb-0 tm-color-gray"> <!--todo: Add customer company introduction text about what they lead in-->
+    const aboutText = document.getElementById('aboutpara1');
+        aboutText.textContent = 'We deliver the best service this side of creation'
+     // This const above adds paragraph text about the companies services
 
-     //<p id="aboutpara1" id="a" class="mb-5"> <!--todo: Add customer company about text-->
+    const mottoText = document.getElementById('aboutpara2');
+        mottoText.textContent = 'Our motto is satisfaction guaranteed'
+    // This const above adds paragraph text containg the company motto
 
-    //<p id="aboutpara2"> <!--todo: Add customer company motto text-->
-
-    // <p id="addresspara" class="mb-3"> <!--todo: Add customer company phone number text-->
+    const phoneNumber = document.getElementById('addresspara');
+        phoneNumber.textContent = '1-800-565-5656'
+    // This const above adds paragraph text containing the company phone#
 
 }; 
 
